@@ -3,8 +3,9 @@
 ## How to run
 
 1. Install all dependencies using maven
+    1. For example ```./mvnw clean install```
 2. Start the application and provide the environment variable **API_URL**
-    - _Option 1_: Supply the variable at runtime
+    - _Option 1_: Supply the variable at runtime ```./mvnw spring-boot:run -Dspring-boot.run.arguments=--API_URL={API_BASE_URL_HERE}```
     - _Option 2_: Updating the fallback value of the property _weather.api.url_
       in [application.properties](src/main/resources/application.properties)
 3. The application will start on http://localhost:8080
